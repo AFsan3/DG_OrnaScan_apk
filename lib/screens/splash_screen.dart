@@ -1,44 +1,32 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Delay 2 seconds before navigating to HomeScreen
-    Timer(Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacementNamed('/home');
+    // Delay 2 seconds before navigation to HomeScreen
+    Timer(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => const HomeScreen()),
+      );
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black, // ✅ Updated to black background
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/logo.png', // Make sure this image is added in pubspec.yaml
-              height: 120,
-            ),
-            SizedBox(height: 20),
-            Text(
-              'DG OrnaScan',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.amber[800],
-              ),
-            ),
-          ],
-        ),
+        child: Image.asset('assets/logo.png'), // Make sure the asset path is correct
       ),
     );
   }
