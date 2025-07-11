@@ -1,4 +1,4 @@
-package com.example.dg_ornascan;
+package com.example.dg_ornascan_apk;
 
 import io.flutter.embedding.android.FlutterActivity;
 
