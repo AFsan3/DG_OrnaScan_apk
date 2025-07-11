@@ -1,0 +1,13 @@
+version: 2.13.0
+project_type: app
+
+# Tracks the last used configuration for 'flutter run'
+flutter_run:
+  last_built_mode: release
+
+# Tracks the Flutter version used for this project
+version_stamp: 3.13.0
+
+# Indicates if the Flutter DevTools were activated
+devtools_activation:
+  status: enabled
