@@ -1,0 +1,72 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code related
+.vscode/
+
+# Android related
+android/.gradle/
+android/.idea/
+android/local.properties
+android/.settings/
+
+# iOS/macOS (if later added)
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/engine/
+
+macos/Flutter/Flutter.framework
+macos/Flutter/Flutter.podspec
+macos/Flutter/Generated.xcconfig
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/App.framework
+macos/Flutter/engine/
+
+# Web related
+web/.dart_tool/
+web/build/
+
+# Windows related
+windows/flutter/ephemeral/
+
+# Linux related
+linux/flutter/ephemeral/
+
+# Generated files
+*.log
+*.tmp
+*.temp
+*.lock
+*.bak
+
+# Output APKs or binaries
+*.apk
+*.ap_
+
+# Misc
+.DS_Store
+*.swp
+*.swo
+
+# Hive generated files
+lib/**/*.g.dart
+
+# Firebase keys or config (if used later)
+firebase_options.dart
