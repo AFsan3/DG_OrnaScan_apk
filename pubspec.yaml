@@ -1,6 +1,6 @@
 name: dg_ornascan_apk
 description: A smart jewellery price scanner with barcode support.
-publish_to: 'none' # Remove this if you're publishing to pub.dev
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
