@@ -1,7 +1,39 @@
-defaultConfig {
-    applicationId "com.example.dg_ornascan_apk"
-    minSdkVersion 21
-    targetSdkVersion 33
-    versionCode 1
-    versionName "1.0"
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    namespace "com.example.dg_ornascan_apk"
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.example.dg_ornascan_apk"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
+    implementation 'androidx.multidex:multidex:2.0.1'
 }
